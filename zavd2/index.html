@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div>Верхній лівий радіус:
+    <input type="range" id="rtl" min="0" max="100" value="0" oninput="generate()">
+    <input type="text" id="ttl" value="0" readonly>
+</div>
+
+
+<div>Верхній правий радіус:
+    <input type="range" id="rtr" min="0" max="100" value="0" oninput="generate()">
+    <input type="text" id="ttr" value="0" readonly>
+</div>
+
+<div>Нижній лівий радіус:
+    <input type="range" id="rbl" min="0" max="100" value="0" oninput="generate()">
+    <input type="text" id="tbl" value="0" readonly>
+</div>
+
+
+<div>Нижній правий радіус:
+    <input type="range" id="rbr" min="0" max="100" value="0" oninput="generate()">
+    <input type="text" id="tbr" value="0" readonly>
+</div>
+<div>Outline:
+    <input type="range" id="outline" min="0" max="100" value="0" oninput="generate()">
+    <select id="outlineStyle" onchange="generate()">
+        <option value="solid">Solid</option>
+        <option value="dashed">Dashed</option>
+        <option value="dotted">Dotted</option>
+        <option value="double">Double</option>
+    </select>
+</div>
+
+<div>Overflow:
+    <select id="overflow" onchange="generate()">
+        <option value="visible">Visible</option>
+        <option value="hidden">Hidden</option>
+        <option value="scroll">Scroll</option>
+        <option value="auto">Auto</option>
+    </select>
+</div>
+<div>
+    <textarea id="cssCode" rows="6" cols="50" readonly></textarea>
+</div>
+<div id="block"></div>
+<script src="script.js"></script>
+</body>
+</html>
